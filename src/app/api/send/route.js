@@ -28,6 +28,6 @@ export async function POST(req) {
     return NextResponse.json(data);
   } catch (error) {
     // Caso ocorra algum erro, retorne um erro na resposta
-    return NextResponse.json({ error: error.message });
+    return NextResponse.json({ error: error.message }, { status: 500 });
   }
 }
