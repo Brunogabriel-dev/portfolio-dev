@@ -34,12 +34,12 @@ const projectsData = [
   },
   {
     id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
+    title: "Slide fruit",
+    description: "Html Css JavaScript",
     image: "/images/projects/4.png",
     tag: ["All", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/Brunogabriel-dev/slider-soda-fruit",
+    previewUrl: "https://sliderfruit.netlify.app/",
   },
   {
     id: 5,
