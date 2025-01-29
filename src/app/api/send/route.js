@@ -1,33 +1,27 @@
-import { NextResponse } from "next/server";
-import { Resend } from "resend";
+// import { EmailTemplate } from '../../../components/EmailTemplate';
+import { Resend } from 'resend';
 
-// Crie a instância do Resend com a chave da variável de ambiente
 const resend = new Resend(process.env.RESEND_API_KEY);
-const fromEmail = process.env.FROM_EMAIL;
 
-export async function POST(req) {
-  // Extraia os dados do corpo da requisição
-  const { email, subject, message } = await req.json();
-  console.log(email, subject, message);
-
+export async function POST() {
   try {
-    // Enviar email usando o Resend
-    const data = await resend.emails.send({
-      from: fromEmail,
-      to: [fromEmail, email],
-      subject: subject,
-      html: `
-        <h1>${subject}</h1>
-        <p>Thank you for contacting us!</p>
-        <p>New message submitted:</p>
-        <p>${message}</p>
-      `, // Usando HTML ao invés de JSX
+    const { data, error } = await resend.emails.send({
+      from: 'Bruno <webdeveloper@gmail.com>',
+      to: ['webdeveloper@gmail.com'],
+      subject: 'Hello world',
+      react: (
+        <>
+          <p>Email Body</p>
+        </>
+      ),
     });
 
-    // Retorne a resposta com os dados do envio
-    return NextResponse.json(data);
+    if (error) {
+      return Response.json({ error }, { status: 500 });
+    }
+
+    return Response.json(data);
   } catch (error) {
-    // Caso ocorra algum erro, retorne um erro na resposta
-    return NextResponse.json({ error: error.message }, { status: 500 });
+    return Response.json({ error }, { status: 500 });
   }
 }
