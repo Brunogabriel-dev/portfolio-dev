@@ -17,11 +17,11 @@ const projectsData = [
   {
     id: 2,
     title: "Mecanica online Website",
-    description: "Project 2 description",
-    image: "/images/projects/2.png",
+    description: "Html Css JavaScript",
+    image: "/images/projects/mecanica.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/Brunogabriel-dev/site-mecanica",
+    previewUrl: "https://mecanicaonline.netlify.app/",
   },
   {
     id: 3,
