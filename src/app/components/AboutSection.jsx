@@ -28,7 +28,7 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
         <li>React do zero ao Avançado - Udemy</li>
-        <li>University of California, Santa Cruz</li>
+        <li></li>
       </ul>
     ),
   },
