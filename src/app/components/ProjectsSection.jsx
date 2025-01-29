@@ -9,7 +9,7 @@ const projectsData = [
     id: 1,
     title: "React Portfolio Website",
     description: "Project 1 description",
-    image: "/images/projects/1.png",
+    image: "/images/projects/carts-shop1.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/Brunogabriel-dev/cart-list",
     previewUrl: "https://carts-shop.netlify.app/",
