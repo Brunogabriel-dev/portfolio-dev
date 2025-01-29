@@ -36,7 +36,7 @@ const projectsData = [
     id: 4,
     title: "Slide fruit",
     description: "Html Css JavaScript",
-    image: "/images/projects/4.png",
+    image: "/images/projects/sliderfruit.png",
     tag: ["All", "Mobile"],
     gitUrl: "https://github.com/Brunogabriel-dev/slider-soda-fruit",
     previewUrl: "https://sliderfruit.netlify.app/",
