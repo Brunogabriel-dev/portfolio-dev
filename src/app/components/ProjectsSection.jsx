@@ -25,12 +25,12 @@ const projectsData = [
   },
   {
     id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
-    image: "/images/projects/3.png",
+    title: "Restaurant Web Food",
+    description: "React Tailwindcss",
+    image: "/images/projects/restaurante.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/Brunogabriel-dev/restaurant-web",
+    previewUrl: "https://restauraweb.netlify.app/",
   },
   {
     id: 4,
